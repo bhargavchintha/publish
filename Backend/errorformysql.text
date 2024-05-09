@@ -1,0 +1,86 @@
+If you create Backend menas 
+
+   1. mkdir Backend  ( --  Here mkdir is to create A folder and here Backend is my file name.  -- )
+
+   2.npm i init -y  ( --  Here it will install the json package by help of that  -- )
+
+   3. After  installing npm we can see our package.json file and if you want to CONNECT to database the you need to install
+      this ---**  npm i express mysql cors nodemon  **-----  (--  Here cors is just optinal but if you want install database means then remain all 
+       Important  only  --).
+  
+   4. After create a file in the Backend ( -- for example - I created a server.js like that you can create your own  -- )
+
+   5. After creating a file and you need to add that file in the PACKAGE.JSON ( -- for example my file name is server.js you need add like 
+   
+       **   "start": "nodemon server.js"  here server.js is my file name and you can put what ever you want   **  -- )
+
+
+
+Client does not support authentication protocol requested by server; consider upgrading MySQL client',it's show like this Client does not support authentication protocol requested by server; consider upgrading MySQL client', and in network also showing error 500
+
+show this types of errors.
+Next thing ->
+
+              GoTO MYSQL AND RUN MY SERVER IN THE CMD 
+               AND CONNECT TO MYSQL AFTER RUN THIS COMMAND 
+
+
+             **  ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'your_password';  **
+             ****  ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'root'; *****
+
+            -----------------------------------------------------------------------------------------------------
+             HERE  YOU NEED TO CHANGE "YOUR_PASSWORD" TO WHAT EVER PASSWORD YOU WANT FOR ROOT ACCOUNT OF MySQL**                   ------------------------------------------           ------------------------------------------------                   (replace your_password with  YOUR MYSQL password)  
+
+
+And we need a name like --- *"proxy" *-----  and give the  --- * url *--- that run  your server in cmd (or) Terminal and you need add that proxy 
+
+in the --- ** PACKAGE.JSON and  PACKAGE.LOCK.JSON ** --- we must need to add it in that.
+
+after in AXOIS. POST ( --- * here we jsut need to put only the link of the page that we are created * --- )
+
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+here you need remember one thing .
+when you are giving the values in the post man you should give correctly
+=---------------------------  SIGNUP  in Postman -----------------------------------
+like this --
+{
+    "name": "John Doe",
+    "userid": "john123",
+    "email": "john@example.com",
+    "password": "password123",
+    "randomKey":"852147",
+    "tokenkey":"dRWhnqvp1W1JxCUP"
+}
+
+for this 
+and here based on the things you need to change the values 
+
+---------------------------- LOGIN ----------------------------------
+
+this the values in the post man 
+
+1.
+{
+   "login":"shijesh!2",
+  "password":"shijeah"
+}  
+
+   --------or-------
+2.
+{
+   "login":"Shijesh@gmail.com",
+  "password":"shijeah"
+   
+}
+
+here  you can both  login with email or  username ,
+both will work 
+
+--------------------------------------------------------------------------------------------------
+
+
+
+
+
